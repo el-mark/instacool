@@ -1,10 +1,11 @@
 import * as React from 'react'
+import { Link } from 'react-router-dom'
+
 import Button from '../../components/Button'
 import Card from '../../components/Card'
 import Center from '../../components/Center'
 import Container from '../../components/Container'
 import Input from '../../components/Input'
-import Link from '../../components/Link'
 import Title from '../../components/Title'
 
 export default class Login extends React.Component {
@@ -17,7 +18,7 @@ export default class Login extends React.Component {
                 <Input placeholder='Contraseña' label='Contraseña'/>
                 <Button block={true}>Enviar</Button>
                 <Center>
-                    <Link>Iniciar sesión</Link>
+                    <Link to='/'>Iniciar sesión</Link>
                 </Center>
                 </Card>
             </Container>
