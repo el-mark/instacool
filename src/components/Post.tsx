@@ -1,29 +1,13 @@
-import { faRetweet, faThumbsUp } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as React from 'react'
+import Footer from './Footer'
 
 
 const style = {
     backgroundColor: '#fff',
     border: '1px solid #ddd',
+    marginBottom: '10px',
     padding: '10px 15px',
 }
-
-const footerStyle = {
-    backgroundColor: '#eee',
-    display: 'flex',
-    marginBottom: '-10px',
-    marginLeft: '-15px',
-    width: 'calc(100% + 30px)'
-}
-const iconStyle = {
-    cursor: 'pointer',
-    flex: 1, 
-    padding: '10px 15px',
-    textAlign: 'center',
-
-} as React.CSSProperties
-
 
 interface IPostProps {
     image: string
@@ -35,10 +19,7 @@ export default class Post extends React.Component<IPostProps> {
         return (
             <div style={style}>
                 <img src={image} />
-                <div style={footerStyle}>
-                    <div style={iconStyle}><FontAwesomeIcon icon={faThumbsUp} /> Like</div>
-                    <div style={iconStyle}><FontAwesomeIcon icon={faRetweet} /> Compartir</div>
-                </div>
+                <Footer />
             </div>
         )
     }
