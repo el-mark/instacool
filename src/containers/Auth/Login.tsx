@@ -11,7 +11,7 @@ import Title from '../../components/Title'
 export default class Login extends React.Component {
     public render() {
         return(
-            <Container>
+            <Container center={true} >
                 <Card>
                 <Title>Iniciar de sesión</Title>
                 <Input placeholder='Correo' label='Correo'/>
