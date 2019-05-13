@@ -8,10 +8,10 @@ const config = {
     messagingSenderId: "1076243886041",
     projectId: "instacool-11968",
     storageBucket: "instacool-11968.appspot.com",
-  };
-  // Initialize Firebase
-  firebase.initializeApp(config);
+};
+// Initialize Firebase
+firebase.initializeApp(config);
 
-  export const auth = firebase.auth()
-  export const db = firebase.firestore()
-  export const storage = firebase.storage()
+export const auth = firebase.auth()
+export const db = firebase.firestore()
+export const storage = firebase.storage()
