@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-const style = (block: boolean) => ({
+const style = (block: string) => ({
     backgroundColor: '#00D1B2',
     border: '0px',
     borderRadius: '4px',
@@ -11,12 +11,12 @@ const style = (block: boolean) => ({
 })
 
 interface IButtonProps {
-    block?: boolean
+    block?: string
 }
 
 export default class Button extends React.Component<IButtonProps> {
     public render() {
-        const { block = false } = this.props
+        const { block = 'false' } = this.props
         return (
             <button {...this.props} style={style(block)} />
         )
